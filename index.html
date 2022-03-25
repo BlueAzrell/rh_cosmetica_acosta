@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>RH Cosmetica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,45 +54,46 @@
 
         <section class="header_responsive">
             <picture class="logo_responsive">
-            <a href="index.html"><img src="assets/img/logo.png" alt="El logo de la marca RH Cosmética"></a>
-        </picture>
-        <nav class="nav_responsive">
-            <input type="checkbox" id="menu">
-            <label for="menu"> ☰ </label>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="index.html" class="menu__link">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="assets/views/about.html" class="menu__link">About</a>
-                </li>
-                <li class="menu__item">
-                    <a href="assets/views/contact.html" class="menu__link">Contact</a>
-                </li>
-                <picture class="navbar__logo">
-                    <a href="index.html"><img src="assets/img/loguito.png" alt="El logo de la marca RH Cosmética"></a>
-                </picture>
-                <li class="menu__item">
-                    <a href="assets/views/gallery.html" class="menu__link">Gallery</a>
-                </li>
-                <li class="menu__item">
-                    <a href="assets/views/service.html" class="menu__link">Service</a>
-                    <ul class="sub-menu">
-                        <li class="sub-menu__item">
-                            <a href="" class="sub-menu__link">Cremas</a>
-                        </li>
-                        <li class="sub-menu__item">
-                            <a href="" class="sub-menu__link">Perfumes</a>
-                        </li>
-                        <li class="sub-menu__item">
-                            <a href="" class="sub-menu__link">Para el Cabello</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </section>
-        
+                <a href="index.html"><img src="assets/img/logo.png" alt="El logo de la marca RH Cosmética"></a>
+            </picture>
+            <nav class="nav_responsive">
+                <input type="checkbox" id="menu">
+                <label for="menu"> ☰ </label>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="assets/views/about.html" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="assets/views/contact.html" class="menu__link">Contact</a>
+                    </li>
+                    <picture class="navbar__logo">
+                        <a href="index.html"><img src="assets/img/loguito.png"
+                                alt="El logo de la marca RH Cosmética"></a>
+                    </picture>
+                    <li class="menu__item">
+                        <a href="assets/views/gallery.html" class="menu__link">Gallery</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="assets/views/service.html" class="menu__link">Service</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item">
+                                <a href="" class="sub-menu__link">Cremas</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="" class="sub-menu__link">Perfumes</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="" class="sub-menu__link">Para el Cabello</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
 
     </header>
     <!-- Fin header y nav-->
@@ -98,28 +101,84 @@
     <!--Inicio main-->
     <main>
         <!--Inicio section-->
-        <section class="principal flex-row">
-            <!--Inicio article-->
-            <picture class="principal__picture">
-                <img class="principal__img" src="assets/img/principal1.png" alt="Productos iyosei">
-            </picture>
+        <div class="grid">
+            <div class="imagen_tit">
+                <picture><img class="imagen_tit" src="./assets/img/responsive/rmasculi.png" alt=""></picture>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                class="section_bienvenida">
+                <picture class="principal__picture">
+                    <img class="principal__img animate__animated animate__backInDown" src="assets/img/principal1.png"
+                        alt="Productos iyosei">
+                </picture>
 
-            <article class="principal__description">
-                <div class="principal__container">
-                    <h1>Date un cariño</h1>
-                    <p>RH Cosmética es un espacio dedicado al cuidado y bienestar personal.
-                        Brindamos asesoría personalizada & Productos de calidad.
+                <article class="principal__description">
+                    <div class="principal__container">
+                        <h1 class="animate__animated animate__backInLeft">Conócete a ti mismo</h1>
+                        <p class="animate__animated animate__backInLeft">La variedad de marcas y productos está pensada
+                            para abarcar todas las áreas de belleza. Por
+                            qué no pruebas algo nuevo hoy?
+                        </p>
+
+                    </div>
+
+                    <button class="principal__button btn"><a href="assets/views/about.html">Solo para ti</a>
+                    </button>
                     </p>
+                </article>
+            </div>
+            <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                class="section_description">
+                <section class="">
+                    <!--Inicio article-->
+                    <picture class="principal__picture">
+                        <img class="principal__img animate__animated animate__backInDown"
+                            src="assets/img/principal1.png" alt="Productos iyosei">
+                    </picture>
 
-                </div>
+                    <article class="principal__description">
+                        <div class="principal__container">
+                            <h1 class="animate__animated animate__backInUp">Date un cariño</h1>
+                            <p class="animate__animated animate__backInUp">RH Cosmética es un espacio dedicado al
+                                cuidado y bienestar personal.
+                                Brindamos asesoría personalizada & Productos de calidad.
+                            </p>
 
-                <button class="principal__button btn"><a href="assets/views/gallery.html">Solo para ti</a>
-                </button>
-                </p>
-            </article>
-            <!--Fin article-->
-        </section>
-        <!--Fin Section-->
+                        </div>
+
+                        <button class="principal__button btn"><a href="assets/views/gallery.html">Ver más</a>
+                        </button>
+                        </p>
+                    </article>
+                    <!--Fin article-->
+                </section>
+                <!--Fin Section-->
+            </div>
+            <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                class="section_contacto">
+
+                <picture class="principal__picture">
+                    <img class="principal__img animate__animated animate__backInDown" src="assets/img/principal1.png"
+                        alt="Productos iyosei">
+                </picture>
+
+                <article class="principal__description">
+                    <div class="principal__container">
+                        <h1 class="animate__animated animate__backInRight">Empieza hoy</h1>
+                        <p class="animate__animated animate__backInRight">Llámanos y prueba lo que RH Cosmética tiene
+                            para tí!
+                        </p>
+
+                    </div>
+
+                    <button class="principal__button btn"><a href="assets/views/contact.html">Contáctanos</a>
+                    </button>
+                    </p>
+                </article>
+
+            </div>
+        </div>
+
     </main>
     <!--Fin main-->
 
@@ -139,6 +198,10 @@
             <a class="redes" href="assets/views/contact.html">CONTACT</a></h3>
     </footer>
     <!--Fin Footer-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
