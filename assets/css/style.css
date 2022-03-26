@@ -359,7 +359,24 @@ input {
     color: var(--secondary);
 }
 
-/*grid layoutit*/
+.form label {
+    font-size: 1.2em;
+}
+
+.form__input-text {
+    padding: .8rem;
+    border-radius: 5px;
+    outline: none;
+    border: none:
+    width: 150px;
+    transition: all .06s linear;
+}
+
+.form__input-text:focus {
+    width: 150px;
+}
+
+/*grid layout*/
 
 .grid {
     display: grid;
