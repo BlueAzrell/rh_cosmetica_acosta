@@ -27,25 +27,26 @@
 
 html {
     font-size: 62.5%;
-    font-family: var(--font-primary);
-    color: black;
-    background-image: linear-gradient(to right top, #ffeddf, #f8cfb4, #f0b08c, #e79069, #de6e4b);
+    
 }
 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-}
-
-ul {
-    list-style-type: none;
+    background-image: linear-gradient(to right top, #ffeddf, #f8cfb4, #f0b08c, #e79069, #de6e4b);
+    font-family: var(--font-primary);
+    color: black;
 }
 
 a {
     text-decoration: none;
     color: var(--secondary);
     display: inline-block;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /*Helpers*/
@@ -197,8 +198,6 @@ header {
 }
 
 /*MAIN SECTION */
-
-
 
 .principal {
     flex-wrap: wrap;
@@ -380,21 +379,14 @@ input {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "imagen_tit imagen_tit imagen_tit"
         "section_bienvenida section_description section_contacto"
         "section_bienvenida section_description section_contacto";
     padding: 10px;
     gap: 0.6rem;
-}
-
-.imagen_tit {
-    grid-area: imagen_tit;
-    width: 50%;
-    object-fit: none;
 }
 
 .section_bienvenida {
@@ -415,21 +407,14 @@ input {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "imagen_tit imagen_tit imagen_tit"
             "section_bienvenida section_description section_contacto"
             "section_bienvenida section_description section_contacto";
         padding: 10px;
         gap: 0.6rem;
-    }
-
-    .imagen_tit {
-        grid-area: imagen_tit;
-        width: 50%;
-        object-fit: none;
     }
 
     .section_bienvenida {
@@ -499,21 +484,14 @@ input {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "imagen_tit imagen_tit imagen_tit"
             "section_bienvenida section_description section_contacto"
             "section_bienvenida section_description section_contacto";
         padding: 10px;
         gap: 0.6rem;
-    }
-
-    .imagen_tit {
-        grid-area: imagen_tit;
-        width: 50%;
-        object-fit: none;
     }
 
     .section_bienvenida {
@@ -581,11 +559,10 @@ input {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "imagen_tit imagen_tit imagen_tit"
             "section_bienvenida section_description section_contacto"
             "section_bienvenida section_description section_contacto";
         padding: 10px;
