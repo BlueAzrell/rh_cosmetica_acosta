@@ -163,6 +163,21 @@ header {
     color: var(--secondary);
 }
 
+.navbar-collapse {
+    justify-content: space-around;
+}
+
+.navbar-collapse > a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.nav-link{
+    border: 2px solid #ebebeb;
+    transition: all .3s ease-in-out;
+    color: var(--secondary);
+}
+
 .sub-menu {
     display: none;
     position: absolute;
@@ -308,16 +323,12 @@ header {
     padding: 10px;
     max-width: 100px;
     background-color: #7d60a6;
-    width: auto;
-    height: auto;
     font-family: "Redressed", cursive;
     visibility: visible;
-    box-sizing: border-box;
     margin-top: 0;
     line-height: 1;
     margin-bottom: 5px;
     font-size: large;
-    text-align: center;
     border-style: ridge;
     border-color: #52004f1c;
     border-radius: 15px;
@@ -332,6 +343,7 @@ header {
     text-decoration: none;
     color: #ebebeb;
 }
+
 
 input {
     border-radius: 7px;

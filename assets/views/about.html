@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>ABOUT</title>
 </head>
 
@@ -84,6 +85,37 @@
             </ul>
         </nav>
     </section>
+    <!-- Inicio Nav Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../views/service.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </a>
+                <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item sub-menu__item" href="#">Cremas</a></li>
+                  <li><a class="dropdown-item sub-menu__item" href="#">Perfumes</a></li>
+                  <li><a class="dropdown-item sub-menu__item" href="#">Para el Cabello</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Fin header y nav-->
     <main>
@@ -92,18 +124,24 @@
             <h1 class="principal--titulos">ABOUT</h1>
         </section>
         <section>
-            <article>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dUH8s3z9sVo"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <p class="principal__parrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat
-                    blanditiis tempora
-                    recusandae
-                    officia dicta suscipit? Facere harum, deleniti nobis saepe aliquam dolore accusantium ipsa eveniet
-                    itaque, ab nemo numquam.</p>
-            </article>
-        </section>
+                </section>
+
+                <div class="card">
+                    <div class="card-header">
+                      Cita:
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>No perdono a la gente porque sea débil, los perdono porque soy lo suficientemente fuerte como para saber que la gente comete errores.</p>
+                        <footer class="blockquote-footer">Marilyn Monroe</footer>
+                      </blockquote>
+                    </div>
+                  </div>
+        
     </main>
     <!--Inicio footer-->
     <footer class="foot flex-row">

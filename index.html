@@ -52,50 +52,37 @@
                 </li>
             </ul>
         </nav>
-
-        <section class="header_responsive">
-            <picture class="logo_responsive">
-                <a href="index.html"><img src="assets/img/logo.png" alt="El logo de la marca RH Cosmética"></a>
-            </picture>
-            <nav class="nav_responsive">
-                <input type="checkbox" id="menu">
-                <label for="menu"> ☰ </label>
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="index.html" class="menu__link">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="assets/views/about.html" class="menu__link">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="assets/views/contact.html" class="menu__link">Contact</a>
-                    </li>
-                    <picture class="navbar__logo">
-                        <a href="index.html"><img src="assets/img/loguito.png"
-                                alt="El logo de la marca RH Cosmética"></a>
-                    </picture>
-                    <li class="menu__item">
-                        <a href="assets/views/gallery.html" class="menu__link">Gallery</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="assets/views/service.html" class="menu__link">Service</a>
-                        <ul class="sub-menu">
-                            <li class="sub-menu__item">
-                                <a href="" class="sub-menu__link">Cremas</a>
-                            </li>
-                            <li class="sub-menu__item">
-                                <a href="" class="sub-menu__link">Perfumes</a>
-                            </li>
-                            <li class="sub-menu__item">
-                                <a href="" class="sub-menu__link">Para el Cabello</a>
-                            </li>
-                        </ul>
-                    </li>
+        <!-- Inicio Nav Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="assets/views/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="assets/views/contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="assets/views/gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="assets/views/service.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service
+                    </a>
+                    <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item sub-menu__item" href="#">Cremas</a></li>
+                      <li><a class="dropdown-item sub-menu__item" href="#">Perfumes</a></li>
+                      <li><a class="dropdown-item sub-menu__item" href="#">Para el Cabello</a></li>
+                    </ul>
+                  </li>
                 </ul>
-            </nav>
-        </section>
-
-
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- Fin header y nav-->
 
@@ -138,11 +125,11 @@
                             para abarcar todas las áreas de belleza. Por
                             qué no pruebas algo nuevo hoy?
                         </p>
-
                     </div>
 
                     <button class="principal__button btn"><a href="assets/views/about.html">Solo para ti</a>
                     </button>
+                
                     </p>
                 </article>
             </div>
