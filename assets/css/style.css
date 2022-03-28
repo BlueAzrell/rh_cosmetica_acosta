@@ -49,6 +49,8 @@ ul {
     list-style-type: none;
 }
 
+
+
 /*Helpers*/
 
 .flex-row {
@@ -63,7 +65,7 @@ ul {
 }
 
 .container {
-    max-width: 1.4em;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
