@@ -27,7 +27,7 @@
 
 html {
     font-size: 62.5%;
-    
+
 }
 
 body {
@@ -167,12 +167,12 @@ header {
     justify-content: space-around;
 }
 
-.navbar-collapse > a {
+.navbar-collapse>a {
     text-decoration: none;
     color: var(--secondary);
 }
 
-.nav-link{
+.nav-link {
     border: 2px solid #ebebeb;
     transition: all .3s ease-in-out;
     color: var(--secondary);
@@ -377,7 +377,7 @@ input {
     padding: .8rem;
     border-radius: 5px;
     outline: none;
-    border: none:
+    border: none;
     width: 150px;
     transition: all .06s linear;
 }
