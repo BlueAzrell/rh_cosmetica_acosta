@@ -20,7 +20,7 @@
         <picture class="logo">
             <a href="index.html"><img src="assets/img/logo.png" alt="El logo de la marca RH Cosmética"></a>
         </picture>
-        <nav class="navbar flex-row container">
+        <nav class="freshnav navbar flex-row container">
             <ul class="menu flex-row">
                 <li class="menu__item">
                     <a href="index.html" class="menu__link">Home</a>
@@ -54,7 +54,7 @@
             </ul>
         </nav>
         <!-- Inicio Nav Bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="bootnav navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -88,10 +88,9 @@
         </nav>
     </header>
     <!-- Fin header y nav-->
-
     <!--Inicio main-->
     <main class="container">
-        <!--Inicio section-->
+        <!--Inicio carousel Bootstrap-->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -115,14 +114,17 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <!--Fin carousel Bootstrap-->
+
+        <!-- Inicio Section -->
         <section class="row">
+            <!-- Artículo About -->
             <article data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
                 class="col-sm-6 col-md-4 col-lg-4 section_bienvenida">
                 <picture class="img-fluid principal__picture">
                     <img class="principal__img animate__animated animate__backInDown" src="assets/img/principal1.png"
                         alt="Productos iyosei">
                 </picture>
-
                 <article class="principal__description">
                     <div class="principal__container">
                         <h1 class="animate__animated animate__backInLeft">Conócete a ti mismo</h1>
@@ -138,15 +140,14 @@
                     </p>
                 </article>
             </article>
+            <!-- Artículo Gallery -->
             <article data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
                 class="section_description col-sm-6 col-md-4 col-lg-4">
-
-
                 <picture class="img-fluid principal__picture">
                     <img class="principal__img animate__animated animate__backInDown" src="assets/img/principal1.png"
                         alt="Productos iyosei">
                 </picture>
-
+                <!-- Artículo Contact -->
                 <article class="principal__description">
                     <div class="principal__container">
                         <h1 class="animate__animated animate__backInUp">Date un cariño</h1>
@@ -154,9 +155,7 @@
                             cuidado y bienestar personal.
                             Brindamos asesoría personalizada & Productos de calidad.
                         </p>
-
                     </div>
-
                     <button class="principal__button botono"><a href="assets/views/gallery.html">Ver más</a>
                     </button>
                     </p>
@@ -164,12 +163,10 @@
             </article>
             <article data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
                 class="section_contacto col-sm-6 col-md-4 col-lg-4">
-
                 <picture class="img-fluid principal__picture">
                     <img class="principal__img animate__animated animate__backInDown" src="assets/img/principal1.png"
                         alt="Productos iyosei">
                 </picture>
-
                 <article class="principal__description">
                     <div class="principal__container">
                         <h1 class="animate__animated animate__backInRight">Empieza hoy</h1>
@@ -183,10 +180,9 @@
                     </button>
                     </p>
                 </article>
-
             </article>
         </section>
-
+        <!-- Fin Section -->
     </main>
     <!--Fin main-->
 
@@ -203,7 +199,9 @@
             <a href="https://www.instagram.com/rh.cosmetica/" target="_blank"><img class="redes"
                     src="assets/img/instagram.ico" alt=""></a>
             </div>
-            <a class="redes" href="assets/views/contact.html">CONTACT</a></h3>
+            <a class="redes" href="assets/views/contact.html">CONTACT</a>
+            <span>Hecho con ♓</span>
+        </h3>
     </footer>
     <!--Fin Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
