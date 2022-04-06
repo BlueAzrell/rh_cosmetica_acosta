@@ -1,0 +1,33 @@
+/*FORM*/
+
+.form-row {
+    max-width: 550px;
+    gap: 2rem;
+}
+
+.form-row label {
+    font-size: 1.2rem;
+}
+
+.form-row__input-text {
+    padding: .8rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 150px;
+    transition: all .06s linear;
+}
+
+.form__input-text:focus {
+    width: 150px;
+    outline: none;
+}
+
+form div input{
+    margin: 0.5rem;
+}
+
+form div input:checked{
+    width: 15px;
+    height: 15px;
+}

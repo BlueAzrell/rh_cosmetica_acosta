@@ -1,0 +1,40 @@
+.galeria_productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "rh perfumes perfumes cremas"
+        "rh femeni masculi cremas"
+        "rh cabello cabello cabello";
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.rh {
+    grid-area: rh;
+}
+
+.perfumes {
+    grid-area: perfumes;
+}
+
+.cremas {
+    grid-area: cremas;
+}
+
+.femeni {
+    grid-area: femeni;
+}
+
+.masculi {
+    grid-area: masculi;
+}
+
+.cabello {
+    grid-area: cabello;
+}
+
+.galeria_productos_responsive {
+    display: none;
+}

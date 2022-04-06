@@ -1,0 +1,144 @@
+header {
+    width: 100%;
+    padding: 0.5em;
+    
+    .navbar {
+        min-height: 1vh;
+        max-width: 51.46em;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #ebebeb;
+        width: 90%;
+        padding: 0 2rem;
+        border-radius: 10px;
+        justify-content: center;
+        flex-direction: column;
+}
+
+}
+
+.header_responsive {
+    display: none;
+}
+    
+    
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+
+}
+
+.menu .menu__item {
+    border: 2px solid #ebebeb;
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+    border-color: $secondary;
+    border-radius: 10px;
+}
+
+}
+
+.menu .menu__item .menu__link {
+    font-size: $text-md;
+    padding: 1rem;
+}
+
+.navbar .menu .menu__item:hover .sub-menu {
+    display: block;
+}
+
+.navbar .menu__item .sub-menu {
+    display: none;
+    position: absolute;
+}
+
+.navbar .menu .menu__item:hover .sub-menu {
+    display: block;
+}
+
+.menu__item .sub-menu .sub-menu__link {
+    padding: 1rem;
+    font-size: 1.4em;
+    transition: all .3s ease-in-out;
+    background-color: #ebebeb;
+    border-style: ridge;
+    border-color: #52004f1c;
+    border-radius: 10px;
+}
+
+.menu__item .sub-menu .sub-menu__link:hover {
+    background-color: $secondary;
+    color: $principal;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 10 px;
+    color: $secondary;
+}
+
+.navbar-collapse {
+    justify-content: space-around;
+}
+
+.navbar-collapse>a {
+    text-decoration: none;
+    color: $secondary;
+}
+
+.nav-link {
+    border: 2px solid #ebebeb;
+    transition: all .3s ease-in-out;
+    color: $secondary;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+
+.sub-menu .sub-menu__item .sub-menu__link {
+    padding: 1rem;
+    font-size: 1.4em;
+    transition: all .3s ease-in-out;
+}
+
+.sub-menu .sub-menu__item .sub-menu__link:hover {
+    background-color: $secondary;
+    color: $principal;
+}
+
+.menu li:hover .sub_menu {
+    display: block;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 5px;
+}
+
+.navbar__logo {
+    flex-basis: 30%;
+    display: none;
+}
+

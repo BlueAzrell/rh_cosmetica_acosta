@@ -1,0 +1,15 @@
+.foot {
+    height: 10vh;
+    background-color: #ebebeb;
+    justify-content: space-between;
+    align-items: flex-end;
+    h3 a {
+        color: $secondary;
+    }
+
+}
+
+.redes {
+    display: flexbox;
+    align-items: baseline;
+}

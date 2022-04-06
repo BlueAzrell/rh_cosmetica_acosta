@@ -1,31 +1,31 @@
-/*Imports*/
+/* Imports
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Redressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Redressed&display=swap"); */
 
 /*Variables*/
 
-:root {
+/* :root {
     --principal: #ffeddf;
     --secondary: #52004f;
-    --font-primary: "Arial", sans-serif;
+    --$font-prima: "Arial", sans-serif;
     --font-secondary: "Helvetica", sans-serif;
     --text-lg: 2em;
     --text-md: 1.8em;
-}
+} */
 
 /* Normalize es el reseteo de CSS que le quita los valores por defecto del navegador*/
 
-*,
-*::before,
-*::after {
+/* ,
+::before,
+::after { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /*Globals*/
 
-html {
+/* html {
     font-size: 62.5%;
 
 }
@@ -35,23 +35,23 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     background-image: linear-gradient(to right top, #ffeddf, #f8cfb4, #f0b08c, #e79069, #de6e4b);
-    font-family: var(--font-primary);
+    font-family: $$font-prima;
     color: black;
 }
 
 a {
     text-decoration: none;
-    color: var(--secondary);
+    color: $secondary;
     display: inline-block;
 }
 
 ul {
     list-style-type: none;
-}
+} */
 
 
 
-/*Helpers*/
+/* Helpers
 
 .flex-row {
     display: flex;
@@ -62,11 +62,11 @@ ul {
 .flex-column {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /* HEADER */
 
-header {
+/* header {
     width: 100%;
     padding: 0.5em;
 }
@@ -100,12 +100,12 @@ header .navbar {
 }
 
 .menu .menu__item:hover {
-    border-color: var(--secondary);
+    border-color: $secondary;
     border-radius: 10px;
 }
 
 .menu .menu__item .menu__link {
-    font-size: var(--text-md);
+    font-size: $text-md;
     padding: 1rem;
 }
 
@@ -133,8 +133,8 @@ header .navbar {
 }
 
 .menu__item .sub-menu .sub-menu__link:hover {
-    background-color: var(--secondary);
-    color: var(--principal);
+    background-color: $secondary;
+    color: $principal;
     border-radius: 10px;
 }
 
@@ -156,7 +156,7 @@ header .navbar {
     display: block;
     text-decoration: none;
     padding: 15px 10 px;
-    color: var(--secondary);
+    color: $secondary;
 }
 
 .navbar-collapse {
@@ -165,13 +165,13 @@ header .navbar {
 
 .navbar-collapse>a {
     text-decoration: none;
-    color: var(--secondary);
+    color: $secondary;
 }
 
 .nav-link {
     border: 2px solid #ebebeb;
     transition: all .3s ease-in-out;
-    color: var(--secondary);
+    color: $secondary;
 }
 
 .sub-menu {
@@ -186,8 +186,8 @@ header .navbar {
 }
 
 .sub-menu .sub-menu__item .sub-menu__link:hover {
-    background-color: var(--secondary);
-    color: var(--principal);
+    background-color: $secondary;
+    color: $principal;
 }
 
 .menu li:hover .sub_menu {
@@ -206,11 +206,11 @@ header .navbar {
 
 .header_responsive {
     display: none;
-}
+} */
 
 /*MAIN SECTION */
 
-.principal {
+/* .principal {
     flex-wrap: wrap;
 }
 
@@ -268,10 +268,10 @@ header .navbar {
 
 .principal__container h1 {
     font-size: 6.8em;
-    color: var(--secondary)
-}
+    color: var(--principal);
+} */
 
-.galeria_productos {
+/* .galeria_productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -310,9 +310,9 @@ header .navbar {
 
 .galeria_productos_responsive {
     display: none;
-}
+} */
 
-/* BOTÓN */
+/* BOTÓN
 
 .botono {
     color: #ebebeb;
@@ -343,11 +343,11 @@ header .navbar {
 input {
     border-radius: 7px;
     border-color: #52004f1c;
-}
+} */
 
 /*FORM*/
 
-.form-row {
+/* .form-row {
     max-width: 550px;
     gap: 2rem;
 }
@@ -377,11 +377,11 @@ form div input{
 form div input:checked{
     width: 15px;
     height: 15px;
-}
+} */
 
 /*FOOTER*/
 
-.foot {
+/* .foot {
     height: 10vh;
     background-color: #ebebeb;
     justify-content: space-between;
@@ -395,12 +395,12 @@ form div input:checked{
 }
 
 .foot h3 a {
-    color: var(--secondary);
-}
+    color: $secondary;
+} */
 
 /*grid layout*/
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -423,7 +423,7 @@ form div input:checked{
 
 .section_contacto {
     grid-area: section_contacto;
-}
+} */
 
 /*MEDIA QUERIES*/
 

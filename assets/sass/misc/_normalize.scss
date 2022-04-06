@@ -1,0 +1,68 @@
+/* Normalize es el reseteo de CSS que le quita los valores por defecto del navegador*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Globals*/
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #ffeddf, #f8cfb4, #f0b08c, #e79069, #de6e4b);
+    font-family: $font-prima;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* BOTÓN */
+
+.botono {
+    color: #ebebeb;
+    padding: 10px;
+    max-width: 100px;
+    background-color: #7d60a6;
+    font-family: "Redressed", cursive;
+    visibility: visible;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 5px;
+    font-size: large;
+    border-style: ridge;
+    border-color: #52004f1c;
+    border-radius: 15px;
+}
+
+.principal__button {
+    justify-self: center;
+    margin: 10px;
+}
+
+.principal__button a {
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+input {
+    border-radius: 7px;
+    border-color: #52004f1c;
+}
