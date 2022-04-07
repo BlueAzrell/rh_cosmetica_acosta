@@ -142,3 +142,61 @@ header {
     display: none;
 }
 
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px) {
+    .header_responsive {
+        display: none;
+    }
+
+    .bootnav {
+        display: none;
+    }
+
+}
+
+/*Fin 1200px*/
+
+@media screen and (max-width: 1024px) {
+    .header_responsive {
+        display: none;
+    }
+
+    .bootnav {
+        display: none;
+    }
+}
+
+/*Fin 1024px*/
+
+@media screen and (max-width: 768px) {
+
+    .header_responsive {
+        display: none;
+    }
+
+    .bootnav {
+        display: none;
+    }
+}
+
+/*Fin 768px*/
+
+@media screen and (max-width: 600px) {
+
+    .logo {
+        display: none;
+    }
+
+    .freshnav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .freshnav {
+        display: none;
+    }
+
+}

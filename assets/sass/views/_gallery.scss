@@ -38,3 +38,244 @@
 .galeria_productos_responsive {
     display: none;
 }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px) {
+    .galeria_productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "rh perfumes perfumes cremas"
+            "rh femeni masculi cremas"
+            "rh cabello cabello cabello";
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    .rh {
+        grid-area: rh;
+    }
+
+    .perfumes {
+        grid-area: perfumes;
+    }
+
+    .cremas {
+        grid-area: cremas;
+    }
+
+    .femeni {
+        grid-area: femeni;
+    }
+
+    .masculi {
+        grid-area: masculi;
+    }
+
+    .cabello {
+        grid-area: cabello;
+    }
+
+    .galeria_productos_responsive {
+        display: none;
+    }
+
+}
+
+/*Fin 1200px*/
+
+@media screen and (max-width: 1024px) {
+    .galeria_productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "rh perfumes perfumes cremas"
+            "rh femeni masculi cremas"
+            "rh cabello cabello cabello";
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    .rh {
+        grid-area: rh;
+    }
+
+    .perfumes {
+        grid-area: perfumes;
+    }
+
+    .cremas {
+        grid-area: cremas;
+    }
+
+    .femeni {
+        grid-area: femeni;
+    }
+
+    .masculi {
+        grid-area: masculi;
+    }
+
+    .cabello {
+        grid-area: cabello;
+    }
+
+    .galeria_productos_responsive {
+        display: none;
+    }
+
+}
+
+/*Fin 1024px*/
+
+@media screen and (max-width: 768px) {
+    .galeria_productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "rh perfumes perfumes cremas"
+            "rh femeni masculi cremas"
+            "rh cabello cabello cabello";
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    .rh {
+        grid-area: rh;
+    }
+
+    .perfumes {
+        grid-area: perfumes;
+    }
+
+    .cremas {
+        grid-area: cremas;
+    }
+
+    .femeni {
+        grid-area: femeni;
+    }
+
+    .masculi {
+        grid-area: masculi;
+    }
+
+    .cabello {
+        grid-area: cabello;
+    }
+
+    .header_responsive {
+        display: none;
+    }
+
+    .galeria_productos_responsive {
+        display: none;
+    }
+
+
+}
+
+/*Fin 768px*/
+
+@media screen and (max-width: 600px) {
+
+    .galeria_productos {
+        display: none;
+    }
+
+    .galeria_productos_responsive {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "rh perfumes"
+            "femeni masculi"
+            "cremas cabello";
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rh {
+        grid-area: rh;
+    }
+
+    .perfumes {
+        grid-area: perfumes;
+    }
+
+    .cremas {
+        grid-area: cremas;
+    }
+
+    .femeni {
+        grid-area: femeni;
+    }
+
+    .masculi {
+        grid-area: masculi;
+    }
+
+    .cabello {
+        grid-area: cabello;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .galeria_productos {
+        display: none;
+    }
+
+    .galeria_productos_responsive {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "rh"
+            "perfumes"
+            "cremas"
+            "femeni"
+            "masculi"
+            "cabello";
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .rh {
+        grid-area: rh;
+    }
+
+    .perfumes {
+        grid-area: perfumes;
+    }
+
+    .cremas {
+        grid-area: cremas;
+    }
+
+    .femeni {
+        grid-area: femeni;
+    }
+
+    .masculi {
+        grid-area: masculi;
+    }
+
+    .cabello {
+        grid-area: cabello;
+    }
+
+}

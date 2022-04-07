@@ -1,21 +1,18 @@
-/*Imports*/
+header {
+    width: 100%;
+    padding: 0.5em;
+ .navbar {
+    min-height: 1vh;
+    max-width: 51.46em;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+    width: 90%;
+    padding: 0 2rem;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
 
-/* MISCELANEOUS */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Redressed&display=swap");
-@import './misc/variables';
-@import './misc/normalize';
-@import './misc/mixins';
-@import './misc/animations';
-
-/* PARTIALS */
-
-@import './partials/header';
-@import './partials/footer';
-
-/* VIEWS */
-
-@import './views/about';
-@import './views/contact';
-@import './views/gallery';
-@import './views/service';
-@import './views/home';
+}
