@@ -1,3 +1,74 @@
+@charset "UTF-8";
+/*Imports*/
+/* MISCELANEOUS */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Redressed&display=swap");
+/*Variables*/
+/* Normalize es el reseteo de CSS que le quita los valores por defecto del navegador*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Globals*/
+html {
+  font-size: 62.5%; }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #ffeddf, #f8cfb4, #f0b08c, #e79069, #de6e4b);
+  font-family: "Arial", sans-serif;
+  color: black; }
+
+a {
+  text-decoration: none;
+  color: #52004f;
+  display: inline-block; }
+
+ul {
+  list-style-type: none; }
+
+/* BOTÓN */
+.botono {
+  color: #ebebeb;
+  padding: 10px;
+  max-width: 100px;
+  background-color: #7d60a6;
+  font-family: "Redressed", cursive;
+  visibility: visible;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 5px;
+  font-size: large;
+  border-style: ridge;
+  border-color: #52004f1c;
+  border-radius: 15px; }
+
+.principal__button {
+  justify-self: center;
+  margin: 10px; }
+
+.principal__button a {
+  text-decoration: none;
+  color: #ebebeb; }
+
+input {
+  border-radius: 7px;
+  border-color: #52004f1c; }
+
+/*Helpers*/
+.flex-row {
+  display: flex;
+  align-content: center; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+/* PARTIALS */
 header {
   width: 100%;
   padding: 0.5em; }
@@ -13,3 +84,374 @@ header {
     border-radius: 10px;
     justify-content: center;
     flex-direction: column; }
+
+.header_responsive {
+  display: none; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-basis: 30%; }
+
+.menu .menu__item {
+  border: 2px solid #ebebeb;
+  transition: all .3s ease-in-out; }
+  .menu .menu__item:hover {
+    border-color: #52004f;
+    border-radius: 10px; }
+
+.menu .menu__item .menu__link {
+  font-size: 1.8em;
+  padding: 1rem; }
+
+.navbar .menu .menu__item:hover .sub-menu {
+  display: block; }
+
+.navbar .menu__item .sub-menu {
+  display: none;
+  position: absolute; }
+
+.navbar .menu .menu__item:hover .sub-menu {
+  display: block; }
+
+.menu__item .sub-menu .sub-menu__link {
+  padding: 1rem;
+  font-size: 1.4em;
+  transition: all .3s ease-in-out;
+  background-color: #ebebeb;
+  border-style: ridge;
+  border-color: #52004f1c;
+  border-radius: 10px; }
+
+.menu__item .sub-menu .sub-menu__link:hover {
+  background-color: #52004f;
+  color: #ffeddf;
+  border-radius: 10px; }
+
+.navbar ul {
+  list-style: none; }
+
+.navbar .menu {
+  display: flex;
+  gap: 20px; }
+
+.menu > li {
+  position: relative;
+  display: inline-block; }
+
+.menu > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 10 px;
+  color: #52004f; }
+
+.navbar-collapse {
+  justify-content: space-around; }
+
+.navbar-collapse > a {
+  text-decoration: none;
+  color: #52004f; }
+
+.nav-link {
+  border: 2px solid #ebebeb;
+  transition: all .3s ease-in-out;
+  color: #52004f; }
+
+.sub-menu {
+  display: none;
+  position: absolute; }
+
+.sub-menu .sub-menu__item .sub-menu__link {
+  padding: 1rem;
+  font-size: 1.4em;
+  transition: all .3s ease-in-out; }
+
+.sub-menu .sub-menu__item .sub-menu__link:hover {
+  background-color: #52004f;
+  color: #ffeddf; }
+
+.menu li:hover .sub_menu {
+  display: block; }
+
+.sub-menu li a {
+  display: block;
+  padding: 5px; }
+
+.navbar__logo {
+  flex-basis: 30%;
+  display: none; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1200px) {
+  .header_responsive {
+    display: none; }
+  .bootnav {
+    display: none; } }
+
+/*Fin 1200px*/
+@media screen and (max-width: 1024px) {
+  .header_responsive {
+    display: none; }
+  .bootnav {
+    display: none; } }
+
+/*Fin 1024px*/
+@media screen and (max-width: 768px) {
+  .header_responsive {
+    display: none; }
+  .bootnav {
+    display: none; } }
+
+/*Fin 768px*/
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none; }
+  .freshnav {
+    display: none; } }
+
+@media screen and (max-width: 320px) {
+  .freshnav {
+    display: none; } }
+
+.foot {
+  height: 10vh;
+  background-color: #ebebeb;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .foot h3 a {
+    color: #52004f; }
+
+.redes {
+  display: flexbox;
+  align-items: baseline; }
+
+/* VIEWS */
+/*FORM*/
+.form-row {
+  max-width: 550px;
+  gap: 2rem; }
+
+.form-row label {
+  font-size: 1.2rem; }
+
+.form-row__input-text {
+  padding: .8rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 150px;
+  transition: all .06s linear; }
+
+.form__input-text:focus {
+  width: 150px;
+  outline: none; }
+
+form div input {
+  margin: 0.5rem; }
+
+form div input:checked {
+  width: 15px;
+  height: 15px; }
+
+.galeria_productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "rh perfumes perfumes cremas" "rh femeni masculi cremas" "rh cabello cabello cabello";
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: stretch; }
+
+.rh {
+  grid-area: rh; }
+
+.perfumes {
+  grid-area: perfumes; }
+
+.cremas {
+  grid-area: cremas; }
+
+.femeni {
+  grid-area: femeni; }
+
+.masculi {
+  grid-area: masculi; }
+
+.cabello {
+  grid-area: cabello; }
+
+.galeria_productos_responsive {
+  display: none; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1200px) {
+  .galeria_productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "rh perfumes perfumes cremas" "rh femeni masculi cremas" "rh cabello cabello cabello";
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden; }
+  .rh {
+    grid-area: rh; }
+  .perfumes {
+    grid-area: perfumes; }
+  .cremas {
+    grid-area: cremas; }
+  .femeni {
+    grid-area: femeni; }
+  .masculi {
+    grid-area: masculi; }
+  .cabello {
+    grid-area: cabello; }
+  .galeria_productos_responsive {
+    display: none; } }
+
+/*Fin 1200px*/
+@media screen and (max-width: 1024px) {
+  .galeria_productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "rh perfumes perfumes cremas" "rh femeni masculi cremas" "rh cabello cabello cabello";
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden; }
+  .rh {
+    grid-area: rh; }
+  .perfumes {
+    grid-area: perfumes; }
+  .cremas {
+    grid-area: cremas; }
+  .femeni {
+    grid-area: femeni; }
+  .masculi {
+    grid-area: masculi; }
+  .cabello {
+    grid-area: cabello; }
+  .galeria_productos_responsive {
+    display: none; } }
+
+/*Fin 1024px*/
+@media screen and (max-width: 768px) {
+  .galeria_productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "rh perfumes perfumes cremas" "rh femeni masculi cremas" "rh cabello cabello cabello";
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden; }
+  .rh {
+    grid-area: rh; }
+  .perfumes {
+    grid-area: perfumes; }
+  .cremas {
+    grid-area: cremas; }
+  .femeni {
+    grid-area: femeni; }
+  .masculi {
+    grid-area: masculi; }
+  .cabello {
+    grid-area: cabello; }
+  .header_responsive {
+    display: none; }
+  .galeria_productos_responsive {
+    display: none; } }
+
+/*Fin 768px*/
+@media screen and (max-width: 600px) {
+  .galeria_productos {
+    display: none; }
+  .galeria_productos_responsive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "rh perfumes" "femeni masculi" "cremas cabello";
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center; }
+  .rh {
+    grid-area: rh; }
+  .perfumes {
+    grid-area: perfumes; }
+  .cremas {
+    grid-area: cremas; }
+  .femeni {
+    grid-area: femeni; }
+  .masculi {
+    grid-area: masculi; }
+  .cabello {
+    grid-area: cabello; } }
+
+@media screen and (max-width: 320px) {
+  .galeria_productos {
+    display: none; }
+  .galeria_productos_responsive {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "rh" "perfumes" "cremas" "femeni" "masculi" "cabello";
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: stretch; }
+  .rh {
+    grid-area: rh; }
+  .perfumes {
+    grid-area: perfumes; }
+  .cremas {
+    grid-area: cremas; }
+  .femeni {
+    grid-area: femeni; }
+  .masculi {
+    grid-area: masculi; }
+  .cabello {
+    grid-area: cabello; } }
+
+.principal {
+  flex-wrap: wrap;
+  background-color: #52004f1c;
+  padding: 0 3rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 0.79vh;
+  border-radius: 10px;
+  margin-bottom: 0.5vh;
+  padding-top: 1vh;
+  width: 201vh; }
+  .principal__picture {
+    flex-flow: 1;
+    flex-basis: 50%;
+    min-width: 320px; }
+  .principal__description {
+    flex-grow: 1;
+    order: -1;
+    align-items: center;
+    flex-basis: 50%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-family: "Redressed", cursive;
+    gap: 2rem; }
+  .principal__img {
+    width: 100%;
+    border-radius: 10px; }
+  .principal__container p {
+    line-height: 1.5;
+    font-size: 3.2em; }
+  .principalcontainer h1 {
+    font-size: 6.8em;
+    color: #ffeddf; }
+
+.menu {
+  font-size: .8em; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+  .principal {
+    max-width: 78.38em; } }
