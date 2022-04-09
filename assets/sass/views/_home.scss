@@ -1,7 +1,6 @@
 .principal {
     flex-wrap: wrap;
     background-color: #52004f1c;
-    padding: 0 3rem;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -49,6 +48,19 @@
     font-size: .8em;
 }
 
+.carousel-item{
+    max-height: 542px ;
+}
+
+section{
+    padding-top: 10vh;
+}
+
+article{
+    p {
+        padding: map-get($paddings, medium);
+    }
+}
 
 /*MEDIA QUERIES*/
 

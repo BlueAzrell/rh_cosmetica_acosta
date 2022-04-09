@@ -6,3 +6,17 @@
     $font-secondary: "Helvetica", sans-serif;
     $text-lg: 2em;
     $text-md: 1.8em;
+
+$paddings: (
+    xlarge: 5rem,
+    large: 3rem,
+    medium: 2rem,
+    small: 1.5rem,
+    xsmall: 1rem
+);
+
+@each $var, $val in $paddings {
+    .p-#{$var} {
+        padding: #{$val}
+    }
+}
