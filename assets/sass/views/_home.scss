@@ -7,7 +7,6 @@
     margin-top: 0.79vh;
     border-radius: 10px;
     margin-bottom: 0.5vh;
-    padding-top: 1vh;
     width: 201vh;
     
     &__picture {
@@ -35,13 +34,9 @@
 
     &__container p {
         line-height: 1.5;
-        font-size: 3.2em;
     }
 
-    &container h1 {
-        font-size: 6.8em;
-        color: $principal;
-    }
+
 }
 
 .menu {
@@ -53,7 +48,7 @@
 }
 
 section{
-    padding-top: 10vh;
+    padding-top: 2vh;
 }
 
 article{
@@ -65,6 +60,10 @@ article{
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {
+    .carousel-item{
+        max-height: 381px;
+    }
+
     .principal {
         max-width: 78.38em;
     }

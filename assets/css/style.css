@@ -3,6 +3,24 @@
 /* MISCELANEOUS */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Redressed&display=swap");
 /*Variables*/
+.s-jumbo {
+  font-size: 6.8em; }
+
+.s-display {
+  font-size: 3.2em; }
+
+.s-title {
+  font-size: 4.3em; }
+
+.s-text {
+  font-size: 3em; }
+
+.s-caption {
+  font-size: 2em; }
+
+.s-mini {
+  font-size: 1.5em; }
+
 .p-xlarge {
   padding: 5rem; }
 
@@ -56,7 +74,7 @@ ul {
   list-style-type: none; }
 
 /* BOTÓN */
-.botono {
+.botono, .principal__button {
   color: #ebebeb;
   padding: 10px;
   max-width: 100px;
@@ -250,7 +268,6 @@ header {
   margin-top: 0.79vh;
   border-radius: 10px;
   margin-bottom: 0.5vh;
-  padding-top: 1vh;
   width: 201vh; }
   .principal__picture {
     flex-flow: 1;
@@ -270,11 +287,7 @@ header {
     width: 100%;
     border-radius: 10px; }
   .principal__container p {
-    line-height: 1.5;
-    font-size: 3.2em; }
-  .principalcontainer h1 {
-    font-size: 6.8em;
-    color: #ffeddf; }
+    line-height: 1.5; }
 
 .menu {
   font-size: .8em; }
@@ -283,13 +296,15 @@ header {
   max-height: 542px; }
 
 section {
-  padding-top: 10vh; }
+  padding-top: 2vh; }
 
 article p {
   padding: 2rem; }
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
+  .carousel-item {
+    max-height: 381px; }
   .principal {
     max-width: 78.38em; } }
 

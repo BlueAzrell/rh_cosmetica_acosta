@@ -7,6 +7,21 @@
     $text-lg: 2em;
     $text-md: 1.8em;
 
+$sizes:(
+    jumbo: 6.8em,
+    display: 3.2em,
+    title: 4.3em,
+    text: 3em,
+    caption: 2em,
+    mini: 1.5em
+);
+
+@each $var, $val in $sizes {
+    .s-#{$var} {
+        font-size: #{$val}
+    }
+}
+
 $paddings: (
     xlarge: 5rem,
     large: 3rem,

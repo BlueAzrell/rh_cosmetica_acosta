@@ -53,6 +53,7 @@ ul {
 }
 
 .principal__button {
+    @extend .botono;
     justify-self: center;
     margin: 10px;
 }
