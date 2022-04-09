@@ -37,13 +37,9 @@
   padding: 1rem; }
 
 /*Helpers*/
-.flex-row {
-  display: flex;
-  align-content: center; }
-
-.flex-column {
-  display: flex;
-  flex-direction: column; }
+.container {
+  max-width: 1080px;
+  margin: 0 auto; }
 
 /* Normalize es el reseteo de CSS que le quita los valores por defecto del navegador*/
 *,
@@ -124,7 +120,8 @@ header {
 .logo {
   display: flex;
   justify-content: center;
-  flex-basis: 30%; }
+  flex-basis: 30%;
+  padding-bottom: 2%; }
 
 .menu .menu__item {
   border: 2px solid #ebebeb;
@@ -249,14 +246,13 @@ header {
 .foot {
   height: 10vh;
   background-color: #ebebeb;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end; }
+  align-items: flex-end;
+  gap: 2rem; }
   .foot h3 a {
     color: #52004f; }
-
-.redes {
-  display: flexbox;
-  align-items: baseline; }
 
 /* VIEWS */
 .principal {
