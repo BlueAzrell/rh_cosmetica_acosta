@@ -60,55 +60,81 @@
     </nav>
   </header>
   <!-- Fin header y nav-->
-  <main class="container">
+  <main>
     <section>
       <h1 class="s-title">CONTACT</h1>
     </section>
     <section>
       <article>
         <!--Inicio del formulario-->
-        <form>
-          <div class="form-row">
-            <label for="inputName">Ingresa tu nombre</label>
-            <input type="text" class="form-control" placeholder="Nombre Completo">
-            <div class="form-row">
-              <label for="inputName">Cuántos años tienes?</label>
-              <input type="number" class="form-control" placeholder="Edad">
-              <div>
-                <p>Genero:</p>
-                <div>Masculino
-                  <input type="radio" name="genero" value="masculino">
-                </div>
-                <div>Femenino
-                  <input type="radio" name="genero" value="femenino">
-                </div>
+        <div class="container">
+          <form class="formulary s-caption">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Ingresa tu nombre</label>
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Nombre Completo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-2">
+                <label for="inputName">Cuántos años tienes?</label>
+                <input type="number" class="insideform" placeholder="Edad">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="inputName">Género</label>
+              </div>
+              <div class="col-75">Masculino
+                <input type="radio" name="genero" value="masculino">
+              </div>
+              <div class="col-75">Femenino
+                <input type="radio" name="genero" value="femenino">
+              </div>
+              <div class="row">
+                <div class="col-25">
                   <label for="inputEmail4">Ingresa tu correo</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="tucorreo@correo.com">
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Elige una contraseña sabia</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña sabia">
+                <div class="col-75">
+                  <input type="email" class="insideform" id="inputEmail4" placeholder="tucorreo@correo.com">
                 </div>
               </div>
-              <div class="form-group">
-                <label for="inputAddress">Ingresa una dirección</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="San Antonio de los Altos">
+              <div class="row">
+                <div class="col-25">
+                  <label for="inputPassword4">Elige una contraseña</label>
+                </div>
+                <div class="col-75">
+                  <input type="password" class="insideform" id="inputPassword4" placeholder="Contraseña sabia">
+                </div>
               </div>
-              <div class="form-group">
-                <label for="inputAddress2">Ingresa una dirección 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, piso">
+              <div class="row">
+                <div class="col-25">
+                  <label for="inputAddress">Ingresa una dirección</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" class="insideform" id="inputAddress" placeholder="San Antonio de los Altos">
+                </div>
               </div>
-              <div class="form-row">
+              <div class="row">
+                <div class="col-25">
+                  <label for="inputAddress2">Ingresa una dirección 2</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" class="insideform" id="inputAddress2" placeholder="Apartamento, piso">
+                </div>
+              </div>
+              <div class="row">
                 <div class="form-group col-md-6">
                   <label for="inputCity">Ciudad</label>
-                  <input type="text" class="form-control" id="inputCity" placeholder="Los Teques">
+                  <input type="text" class="insideform" id="inputCity" placeholder="Los Teques">
                 </div>
+              </div>
+              <div class="row">
                 <div class="form-group col-md-4">
                   <label for="inputState">Estado</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="insideform">
                     <option selected>Elige:</option>
                     <option>Miranda</option>
                     <option>Distrito Capital</option>
@@ -119,37 +145,39 @@
                     <option>Delta Amacuro</option>
                   </select>
                 </div>
+              </div>
+              <div class="row">
                 <div class="form-group col-md-2">
                   <label for="inputZip">Código Postal</label>
-                  <input type="text" class="form-control" id="inputZip" placeholder="1424">
+                  <input type="text" class="insideform" id="inputZip" placeholder="1424">
                 </div>
               </div>
-              <div class="form-group col-md-4">
-                <label for="inputHorario">Selecciona un horario de entrega</label>
-                <select id="inputHorario" class="form-control">
-                  <option selected>Elige:</option>
-                  <option>Mañana</option>
-                  <option>Tarde</option>
-                  <option>Noche</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Quieres suscribirte a nuestro Newsletter para llenarte el correo de spam?
-                  </label>
+              <div class="row">
+                <div class="form-group col-md-2">
+                  <label for="inputHorario">Selecciona un horario de entrega</label>
+                  <select id="inputHorario" class="insideform">
+                    <option selected>Elige:</option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                  </select>
                 </div>
               </div>
-              <button type="submit" class="botono">Registrate</button>
-              <button class="botono" type="reset" value="Refrescar">Refrescar</button>
-        </form>
-        <div data-aos="fade-up">
-          <picture>
-            <img src="../img/olas.svg" alt="olas">
-          </picture>
-        </div>
+              <div class="row">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Quieres suscribirte a nuestro Newsletter para llenarte el correo de spam?
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <button type="submit" class="botono">Registrate</button>
+                <button class="botono" type="reset" value="Refrescar">Refrescar</button>
+              </div>
+          </form>
         <!--Fin del formulario-->
       </article>
     </section>

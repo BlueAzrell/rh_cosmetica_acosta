@@ -1,33 +1,70 @@
-/*FORM*/
-
-.form-row {
-    max-width: 550px;
-    gap: 2rem;
+.formulary{
+  font-family: $font-prima;
 }
 
-.form-row label {
-    font-size: 1.2rem;
+.insideform{
+  font-size: 2rem;
+  display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.form-row__input-text {
-    padding: .8rem;
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .botono input[type=submit] {
+    float: right;
+  }
+  
+  .botono input[type=submit]:hover {
+    background-color: $principal;
+  }
+  
+  .container form{
     border-radius: 5px;
-    outline: none;
-    border: none;
-    width: 150px;
-    transition: all .06s linear;
-}
-
-.form__input-text:focus {
-    width: 150px;
-    outline: none;
-}
-
-form div input{
-    margin: 0.5rem;
-}
-
-form div input:checked{
-    width: 15px;
-    height: 15px;
-}
+    background-color: $principal;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

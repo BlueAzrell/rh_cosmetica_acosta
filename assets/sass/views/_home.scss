@@ -8,22 +8,32 @@
     border-radius: 10px;
     margin-bottom: 0.5vh;
     width: 201vh;
-    
+
     &__picture {
         flex-flow: 1;
         flex-basis: 50%;
         min-width: 320px;
     }
 
-    &__description {
+    &__description h1 {
         flex-grow: 1;
         order: -1;
         align-items: center;
         flex-basis: 50%;
-        font-weight: bold;
         display: flex;
         flex-direction: column;
-        font-family: "Redressed", cursive;
+        font-family: $font-secondary;
+        gap: 2rem;
+    }
+
+    &__description p {
+        flex-grow: 1;
+        order: -1;
+        align-items: center;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        font-family: $font-prima;
         gap: 2rem;
     }
 
@@ -43,15 +53,15 @@
     font-size: .8em;
 }
 
-.carousel-item{
-    max-height: 542px ;
+.carousel-item {
+    max-height: 542px;
 }
 
-section{
+section {
     padding-top: 2vh;
 }
 
-article{
+article {
     p {
         padding: map-get($paddings, medium);
     }
@@ -60,7 +70,7 @@ article{
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {
-    .carousel-item{
+    .carousel-item {
         max-height: 381px;
     }
 
