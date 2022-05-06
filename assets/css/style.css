@@ -259,6 +259,11 @@ article p {
   flex-direction: column;
   align-items: center; }
 
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+  .principal {
+    max-width: 78.38em; } }
+
 .formulary {
   font-family: "Barlow Condensed", sans-serif; }
 
