@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.citatitulo{
+    font-family: $font-secondary;
+}
+
+.cita{
+    font-family: $font-prima;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {

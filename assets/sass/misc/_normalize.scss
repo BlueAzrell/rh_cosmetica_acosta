@@ -50,6 +50,20 @@ ul {
     border-style: ridge;
     border-color: #52004f1c;
     border-radius: 15px;
+
+
+    &:hover {
+        animation: pulsate 1s ease-in-out;
+    }
+
+    @keyframes pulsate {
+        0% {
+            box-shadow:
+                0 0 15px #7d60a6,
+                0 0 30px #4e00c2;
+        }
+    }
+
 }
 
 .principal__button {

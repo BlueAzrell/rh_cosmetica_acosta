@@ -1,3 +1,47 @@
+@keyframes zoom {
+    0.0% {}
+
+    18.4% {
+        transform: scale(1.1);
+    }
+
+    28.5% {
+        transform: scale(1.2);
+    }
+
+    46.1% {
+        transform: scale(1.3);
+    }
+
+    9.5% {
+        transform: scale(1.4);
+    }
+}
+
+.rh:hover {
+    animation: zoom 8s ease 0s infinite normal none;
+}
+
+.perfumes:hover {
+    animation: zoom 8s ease 0s infinite normal none;
+}
+
+.femeni:hover {
+    animation: zoom 8s ease 0s infinite normal none;
+}
+
+.masculi:hover {
+    animation: zoom 8s ease 0s infinite normal none;
+}
+
+.cremas:hover {
+    animation: zoom 8s ease 0s infinite normal none;
+}
+
+.cabello:hover {
+    animation: zoom 8s ease 0s infinite normal none;
+}
+
 .galeria_productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -67,20 +111,20 @@
         grid-area: perfumes;
         max-width: 705px;
     }
-    
+
     .cremas {
         grid-area: cremas;
         max-width: 270px;
     }
-    
+
     .femeni {
         grid-area: femeni;
     }
-    
+
     .masculi {
         grid-area: masculi;
     }
-    
+
     .cabello {
         grid-area: cabello;
         max-width: 965px;
@@ -117,20 +161,20 @@
         grid-area: perfumes;
         max-width: 710px;
     }
-    
+
     .cremas {
         grid-area: cremas;
         max-width: 270px;
     }
-    
+
     .femeni {
         grid-area: femeni;
     }
-    
+
     .masculi {
         grid-area: masculi;
     }
-    
+
     .cabello {
         grid-area: cabello;
         max-width: 965px;
@@ -167,20 +211,20 @@
         grid-area: perfumes;
         max-width: 710px;
     }
-    
+
     .cremas {
         grid-area: cremas;
         max-width: 270px;
     }
-    
+
     .femeni {
         grid-area: femeni;
     }
-    
+
     .masculi {
         grid-area: masculi;
     }
-    
+
     .cabello {
         grid-area: cabello;
         max-width: 965px;
@@ -226,20 +270,20 @@
         grid-area: perfumes;
         max-width: 710px;
     }
-    
+
     .cremas {
         grid-area: cremas;
         max-width: 270px;
     }
-    
+
     .femeni {
         grid-area: femeni;
     }
-    
+
     .masculi {
         grid-area: masculi;
     }
-    
+
     .cabello {
         grid-area: cabello;
         max-width: 965px;
@@ -277,20 +321,20 @@
         grid-area: perfumes;
         max-width: 710px;
     }
-    
+
     .cremas {
         grid-area: cremas;
         max-width: 270px;
     }
-    
+
     .femeni {
         grid-area: femeni;
     }
-    
+
     .masculi {
         grid-area: masculi;
     }
-    
+
     .cabello {
         grid-area: cabello;
         max-width: 965px;
