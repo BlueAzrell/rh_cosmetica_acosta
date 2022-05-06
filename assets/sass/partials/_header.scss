@@ -45,108 +45,51 @@
 }
 
 .menu .menu__item {
-     border: 2px solid #ebebeb;
-     transition: all .3s ease-in-out;
+    border: 2px solid #ebebeb;
+    transition: all .3s ease-in-out;
 
-     &:hover {
-         border-color: $secondary;
-         border-radius: 10px;
-     }
+    &:hover {
+        border-color: $secondary;
+        border-radius: 10px;
+    }
 
- }
+}
 
 .menu .menu__item .menu__link {
-     font-size: $text-md;
-     padding: 1rem;
- }
+    font-size: $text-md;
+    padding: 1rem;
+}
 
- .navbar .menu .menu__item:hover .sub-menu {
-     display: block;
- }
+.navbar .menu .menu__item:hover .sub-menu {
+    display: block;
+}
 
- .navbar .menu__item .sub-menu {
-     display: none;
-     position: absolute;
- }
+.navbar .menu__item .sub-menu {
+    display: none;
+    position: absolute;
+}
 
- .navbar .menu .menu__item:hover .sub-menu {
-     display: block;
- }
+.navbar .menu .menu__item:hover .sub-menu {
+    display: block;
+}
 
- .menu__item .sub-menu .sub-menu__link {
-     padding: 1rem;
-     font-size: 1.8em;
-     transition: all .3s ease-in-out;
-     background-color: #ebebeb;
-     border-style: ridge;
-     border-color: #52004f1c;
-     border-radius: 10px;
- }
+.menu__item .sub-menu .sub-menu__link {
+    padding: 1rem;
+    font-size: 1.8em;
+    transition: all .3s ease-in-out;
+    background-color: #ebebeb;
+    border-style: ridge;
+    border-color: #52004f1c;
+    border-radius: 10px;
+}
 
- .menu__item .sub-menu .sub-menu__link:hover {
-     background-color: $secondary;
-     color: $principal;
-     border-radius: 10px;
- }
+.menu__item .sub-menu .sub-menu__link:hover {
+    background-color: $secondary;
+    color: $principal;
+    border-radius: 10px;
+}
 
 /*MEDIA QUERIES*/
-
-// @media screen and (max-width: 1200px) {
-//     .header_responsive {
-//         display: none;
-//     }
-
-//     .bootnav {
-//         display: none;
-//     }
-
-// }
-
-// /*Fin 1200px*/
-
-// @media screen and (max-width: 1024px) {
-//     .header_responsive {
-//         display: none;
-//     }
-
-//     .bootnav {
-//         display: none;
-//     }
-// }
-
-// /*Fin 1024px*/
-
-// @media screen and (max-width: 768px) {
-
-//     .header_responsive {
-//         display: none;
-//     }
-
-//     .bootnav {
-//         display: none;
-//     }
-// }
-
-// /*Fin 768px*/
-
-// @media screen and (max-width: 600px) {
-
-//     .logo {
-//         display: none;
-//     }
-
-//     .freshnav {
-//         display: none;
-//     }
-
-// }
-
-// @media screen and (max-width: 320px) {
-//     .freshnav {
-//         display: none;
-//     }
-
-// }
 
 @media screen and (max-width: 600px) {
     .menu {

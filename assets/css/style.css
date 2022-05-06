@@ -215,7 +215,7 @@ input {
     flex-flow: 1;
     flex-basis: 50%;
     min-width: 320px; }
-  .principal__description h1 {
+  .principal__description {
     flex-grow: 1;
     order: -1;
     align-items: center;
@@ -223,16 +223,11 @@ input {
     display: flex;
     flex-direction: column;
     font-family: "Redressed", sans-serif;
-    gap: 2rem; }
+    gap: 2rem;
+    color: #7D60A6; }
   .principal__description p {
-    flex-grow: 1;
-    order: -1;
-    align-items: center;
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
     font-family: "Barlow Condensed", sans-serif;
-    gap: 2rem; }
+    color: black; }
   .principal__img {
     width: 100%;
     border-radius: 10px; }
@@ -257,6 +252,12 @@ article p {
     max-height: 381px; }
   .principal {
     max-width: 78.38em; } }
+
+.about__section {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .formulary {
   font-family: "Barlow Condensed", sans-serif; }
