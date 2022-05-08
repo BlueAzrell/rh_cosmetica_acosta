@@ -1,24 +1,29 @@
-.about__section{
-    padding-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+ .about__section {
+     padding-top: 2vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
-.citatitulo{
-    font-family: $font-secondary;
-}
 
-.cita{
-    font-family: $font-prima;
-}
+ .citatitulo {
+     font-family: $font-secondary;
+ }
 
-/*MEDIA QUERIES*/
+ .cita {
+     font-family: $font-prima;
+ }
 
-@media screen and (max-width: 768px) {
+ .card {
+     margin-bottom: 18%;
+ }
 
-    .principal {
-        max-width: 78.38em;
-    }
+ /*MEDIA QUERIES*/
 
-}
+ @media screen and (max-width: 768px) {
+
+     .principal {
+         max-width: 78.38em;
+     }
+
+ }

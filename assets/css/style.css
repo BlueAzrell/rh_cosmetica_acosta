@@ -271,6 +271,9 @@ article p {
 .cita {
   font-family: "Barlow Condensed", sans-serif; }
 
+.card {
+  margin-bottom: 18%; }
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
   .principal {
